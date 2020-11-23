@@ -11,7 +11,8 @@
       <div class="wrapper">
 
         <nav class="flex-nav">
-          <ul>
+          <a href="#" class="toggleNav">&#9776; Menu</a>
+          <ul class="">
             <li><a href="mobile_reorder.html">Mobile Reorder</a></li>
             <li><a href="#">Item 02</a></li>
             <li><a href="#">Item 03</a></li>
@@ -33,5 +34,15 @@
           </ul>
         </nav>
       </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script>
+
+        $(function() {
+          $('.toggleNav').on('click',function() {
+            $('.flex-nav ul').toggleClass('open');
+          });
+        });
+
+      </script>
     </body>
 </html>
